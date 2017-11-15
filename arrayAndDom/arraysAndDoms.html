@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+	<h1 id='more'></h1>
+	<script type="text/javascript">
+		var fruit = ["apple", "orange","kiwi"];
+		// Declares fruit a variable and fruit is an array of different Fruits. 
+		var input = prompt('Add more fruit');
+		// Declare input a variable and make it equal to the users answer to the prompt.
+		fruit.push(input);
+		// Adds the result from the input to the array.
+		fruit.sort();
+		// Puts the array including the users input in alphabetical order, if any word is entered with a capital letter, that word will automatically go first ex: Grapes,apple,kiwi,orange.
+		document.getElementById('more').innerHTML = fruit.join(' with ');
+		// Communicates with the id to display the array + the users input, seperated by the word with to the webpage.  
+
+	</script>
+
+	</body>
+</html>
