@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Find The Students Average</title>
+	</head>
+	<body>
+	<script type="text/javascript">
+		var grades = [80, 77, 88, 95, 68];//list of the grades to be averaged
+
+		var sum = 80 + 70 + 88 + 95 + 68 ;//the sum of the grades 401
+
+		var avg = ([ sum / grades.length ]);//the sum 401 divided by the amount of elements in the array, 401/5=80.2
+
+			if (avg < 60){
+            console.log("Grade : F");//80.2 is > 60
+
+          } else if (avg < 70) {
+            console.log("Grade : D");//80.2 is > 70
+
+          } else if (avg < 79) {
+            console.log("Grade : C");//80.2 is > 79
+
+    	  } else if (avg < 90) {
+            console.log("Grade : B");//80.2 is < 90 the student will get a B grade
+
+       	  } else if (avg < 100) {
+            console.log("Grade : A");//80.2 is < 100
+		  }
+
+	</script>
+
+	</body>
+</html>
